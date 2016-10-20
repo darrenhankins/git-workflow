@@ -4,10 +4,42 @@
 <head>
     <meta charset="utf-8">
     <title>git-workflow-exercise!</title>
+    <style>
+        h1 {
+            font-size: 4em;
+        }
+
+        body {
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#box").animate({
+                    height: "300px"
+                });
+            });
+            $("#btn2").click(function() {
+                $("#box").animate({
+                    height: "100px"
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body>
     <h1>This is Darren and Guillermo's HTML page</h1>
+
+
+    <button id="btn1">Animate height</button>
+    <button id="btn2">Reset height</button>
+
+    <div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
 
 
 </body>
